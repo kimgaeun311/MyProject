@@ -33,6 +33,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.cookandroid.myproject.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name="com.cookandroid.myproject.MainActivity"
             android:exported="true" >
             <intent-filter>

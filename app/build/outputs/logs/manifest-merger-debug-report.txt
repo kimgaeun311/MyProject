@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
 MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\김리연\.gradle\caches\transforms-3\8d0c9d212fd8610236b904cc15dd0187\transformed\viewbinding-7.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.0] C:\Users\김리연\.gradle\caches\transforms-3\9a4cbe486c23bd9e3d2793787c58c142\transformed\navigation-fragment-ktx-2.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.5.0] C:\Users\김리연\.gradle\caches\transforms-3\048ccb510ca9fa0e5a9f2520a5ecd174\transformed\navigation-fragment-2.5.0\AndroidManifest.xml:17:1-24:12
@@ -61,27 +61,27 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.0] C:\Users\김�
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.0] C:\Users\김리연\.gradle\caches\transforms-3\859b1d81dbe8655465711da3e54cd660\transformed\lifecycle-livedata-core-2.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\김리연\.gradle\caches\transforms-3\38858dedb5c4483b6af1a1eea17bce95\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\김리연\.gradle\caches\transforms-3\d8aa656daa174b0958e1c0b998436d42\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:4:5-40
 		INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
 		INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:2:1-42:12
 		INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:6:5-37:19
+ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:6:5-40:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\김리연\.gradle\caches\transforms-3\5ecf78887d09c8d5772bfd0d13860753\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
@@ -138,12 +138,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
 		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:24:27-74
-activity#com.cookandroid.myproject.MainActivity
-ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:28:9-36:20
+activity#com.cookandroid.myproject.LoginActivity
+ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:29:13-41
+		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:29:13-42
+activity#com.cookandroid.myproject.MainActivity
+ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:31:9-39:20
+	android:exported
+		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:33:13-36
+	android:name
+		ADDED from C:\Myproject\app\src\main\AndroidManifest.xml:32:13-41
 uses-sdk
 INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Myproject\app\src\main\AndroidManifest.xml
