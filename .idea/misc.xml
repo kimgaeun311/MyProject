@@ -3,13 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/2022_Guru2/MyProject/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/2022_Guru2/MyProject/app/src/main/res/layout/goal_setting.xml" value="0.33" />
+        <entry key="..\:/2022_Guru2/MyProject/app/src/main/res/layout/login.xml" value="0.3651041666666667" />
         <entry key="..\:/GURU2/MyProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Myproject/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/kengj/AndroidStudioProjects/MyProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
