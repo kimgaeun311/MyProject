@@ -22,6 +22,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyProject" >
         <activity
+            android:name="com.cookandroid.myproject.ClickDayActivity"
+            android:exported="false" />
+        <activity
             android:name="com.cookandroid.myproject.activity_splash"
             android:exported="true"
             android:label="@string/title_activity_splash"
