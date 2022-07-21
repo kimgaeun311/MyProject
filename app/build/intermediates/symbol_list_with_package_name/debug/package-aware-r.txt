@@ -2510,6 +2510,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ellipse_2
+drawable group_4
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2562,6 +2564,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rectangle_7
+drawable rectangle_9
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2760,6 +2764,7 @@ id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
+id ellipse_2
 id end
 id endToStart
 id enterAlways
@@ -2787,8 +2792,10 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id gosettingTxt
 id graph
 id graph_wrap
+id group_4
 id group_divider
 id grouping
 id groups
@@ -2935,6 +2942,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rectangle_7
+id rectangle_9
 id rectangles
 id reverseSawtooth
 id right
@@ -2967,6 +2976,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingText
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -2983,6 +2993,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id some_id
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3026,6 +3037,7 @@ id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
+id text1
 id text2
 id textEnd
 id textSpacerNoButtons
@@ -3067,6 +3079,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id uproadTxt
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3179,6 +3192,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_click_day
 layout activity_login
 layout activity_main
 layout activity_splash
@@ -3201,6 +3215,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_first
 layout fragment_second
+layout goal_setting
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
