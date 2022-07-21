@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color blue_01
+color blue_02
+color brown
+color pink
+color purple_200
+color purple_500
+color purple_700
+color skyblue
+color teal_200
+color teal_700
+color white
+color yellow
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable zom1
+drawable zom2
+drawable zom3
+font font
+font zomfont
+id imageView
+id imageView2
+id imageView3
+id textView
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.MyProject
+xml backup_rules
+xml data_extraction_rules
