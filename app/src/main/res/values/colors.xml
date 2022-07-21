@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+
+    //메인 색상 추가
+    <color name="blue_01">#767ACF</color>
+    <color name="blue_02">#CCD9FF</color> //배경색
+
+    <color name="pink">#FFC6D5</color>
+    <color name="yellow">#FFF0C7</color>
+    <color name="skyblue">#C6E9FF</color>
+    <color name="brown">#593E2C</color>
 </resources>
