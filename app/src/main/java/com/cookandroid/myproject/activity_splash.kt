@@ -18,6 +18,7 @@ class activity_splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+        setVisible(false)
         title = "좀좀 일기"
         Handler().postDelayed({
             val intent = Intent(this, LoginActivity::class.java)

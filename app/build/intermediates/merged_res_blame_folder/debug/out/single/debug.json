@@ -1,138 +1,142 @@
 [
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/font_zomfont.ttf.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/font/zomfont.ttf"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_activity_main.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/layout/activity_main.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_zom2.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\zom2.png"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_zom1.png.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/zom1.png"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_rectangle_7.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\rectangle_7.png"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_content_activity_splash.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\content_activity_splash.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/xml_backup_rules.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_fragment_first.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/layout/fragment_first.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_rectangle_9.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\rectangle_9.png"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/navigation_nav_graph.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/navigation/nav_graph.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/font_font.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/font/font.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_fragment_second.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\fragment_second.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_zom2.png.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/zom2.png"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_fragment_first.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\fragment_first.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_rectangle_9.png.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/rectangle_9.png"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_fragment_second.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/layout/fragment_second.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_group_4.png.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/group_4.png"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\font_zomfont.ttf.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\font\\zomfont.ttf"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_ellipse_2.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\ellipse_2.png"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_goal_setting.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/layout/goal_setting.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_ellipse_2.png.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/ellipse_2.png"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_activity_click_day.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\activity_click_day.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/xml_data_extraction_rules.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_rectangle_7.png.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/rectangle_7.png"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_zom1.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\zom1.png"
+    },
+    {
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_activity_click_day.xml.flat",
         "source": "com.cookandroid.myproject.app-main-47:/layout/activity_click_day.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_group_4.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\group_4.png"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_zom3.png.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/zom3.png"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_activity_splash.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_activity_login.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/layout/activity_login.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\font_font.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\font\\font.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/layout_content_activity_splash.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/layout/content_activity_splash.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\drawable_zom3.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\drawable\\zom3.png"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\layout_goal_setting.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\layout\\goal_setting.xml"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.cookandroid.myproject.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.cookandroid.myproject.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-45:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-47:\\xml\\data_extraction_rules.xml"
     }
 ]

@@ -3047,6 +3047,9 @@ int id textView 0x7f0901d5
 int id textView2 0x7f0901d6
 int id textView4 0x7f0901d7
 int id textView5 0x7f0901d8
+int id textView6 0x7f09020c
+int id textView7 0x7f09020d
+int id textView8 0x7f09020e
 int id text_input_end_icon 0x7f0901d9
 int id text_input_error_icon 0x7f0901da
 int id text_input_start_icon 0x7f0901db
