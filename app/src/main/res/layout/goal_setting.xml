@@ -76,7 +76,7 @@
         android:textColor="#767ACF"
         android:textSize="10dp" />
 
-    <View
+    <Button
         android:id="@+id/rectangle_7"
         android:layout_width="323dp"
         android:layout_height="31dp"
@@ -84,21 +84,12 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="49dp"
         android:layout_marginTop="418dp"
-        android:background="@drawable/rectangle_7" />
-
-    <TextView
-        android:id="@+id/uproadTxt"
-        android:layout_width="63dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="178dp"
-        android:layout_marginTop="419dp"
+        android:background="@drawable/rectangle_7"
         android:fontFamily="@font/zomfont"
-        android:gravity="bottom"
         android:text="등록하기"
         android:textColor="#FFFFFF"
-        android:textSize="15dp" />
+        android:textSize="10dp" />
+
 
     <TextView
         android:id="@+id/gosettingTxt"
