@@ -1,15 +1,19 @@
 [
     {
-        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\drawable_zom2.png.flat",
-        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\drawable\\zom2.png"
-    },
-    {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\drawable_zom2.png.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\drawable\\zom2.png"
+    },
+    {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\drawable_zom1.png.flat",
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\drawable\\zom1.png"
+    },
+    {
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\font_font.xml.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\font\\font.xml"
     },
     {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -68,6 +72,10 @@
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\font_zomfont.ttf.flat",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\font\\zomfont.ttf"
+    },
+    {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\drawable\\ic_launcher_background.xml"
     },
@@ -78,14 +86,6 @@
     {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-28:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "com.cookandroid.myproject.app-merged_res-26:/font_font.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-28:/font/font.xml"
-    },
-    {
-        "merged": "com.cookandroid.myproject.app-merged_res-26:/font_zomfont.ttf.flat",
-        "source": "com.cookandroid.myproject.app-main-28:/font/zomfont.ttf"
     },
     {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-26:\\xml_backup_rules.xml.flat",
