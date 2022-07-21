@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue_02">
+
+
+    <View
+        android:id="@+id/ellipse_2"
+        android:layout_width="56dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="169dp"
+        android:background="@drawable/ellipse_2" />
+
+    <View
+        android:id="@+id/some_id"
+        android:layout_width="76dp"
+        android:layout_height="77dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="106dp"
+        android:background="@drawable/zom1" />
+
+    <View
+        android:id="@+id/group_4"
+        android:layout_width="222dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/group_4" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="68dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="242dp"
+        android:fontFamily="@font/zomfont"
+        android:gravity="bottom"
+        android:text="좀좀목표"
+        android:textColor="#767ACF"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/rectangle_9"
+        android:layout_width="329dp"
+        android:layout_height="122dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="282dp"
+        android:background="@drawable/rectangle_9" />
+
+    <TextView
+        android:id="@+id/settingText"
+        android:layout_width="188dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="288dp"
+        android:fontFamily="@font/zomfont"
+        android:gravity="bottom"
+        android:text="목표를 입력해주세요."
+        android:textColor="#767ACF"
+        android:textSize="10dp" />
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="323dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="418dp"
+        android:background="@drawable/rectangle_7" />
+
+    <TextView
+        android:id="@+id/uproadTxt"
+        android:layout_width="63dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="419dp"
+        android:fontFamily="@font/zomfont"
+        android:gravity="bottom"
+        android:text="등록하기"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/gosettingTxt"
+        android:layout_width="196dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/zomfont"
+        android:gravity="bottom"
+        android:text="나만의 목표를 설정해주세요!"
+        android:textColor="#4E2E17"
+        android:textSize="13dp" />
+
+</RelativeLayout>
