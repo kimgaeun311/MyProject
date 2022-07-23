@@ -2683,6 +2683,7 @@ id buttonPanel
 id button_first
 id button_second
 id cache_measures
+id calendarView
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -3082,7 +3083,6 @@ id unchecked
 id uniform
 id unlabeled
 id up
-id uproadTxt
 id useLogo
 id vertical_only
 id view_offset_helper
