@@ -1,27 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@id/activity_custom_calendar"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="@color/white">
-    
 
+                                                       
+                                                  
+                                              
+                                     
+                                  
 
-        <ImageButton
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_custom_calendar" android:background="@color/white" tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="70dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
 
 
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_chevron_left_24"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="7월 2022"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/zomfont"
+                android:textColor="@color/blue_01"
+                tools:ignore="Suspicious0dp" />
 
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/blue_01"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="sun"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zomfont"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="mon"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zomfont"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="tue"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zomfont"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="wed"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zomfont"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="thu"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zomfont"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="fri"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zomfont"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="sat"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zomfont"/>
+
+            tools:ignore="Suspicious0dp" />
+        </LinearLayout>
 
 
-</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+
+         

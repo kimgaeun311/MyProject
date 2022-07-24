@@ -36,7 +36,8 @@ android {
         gradleVersion = '7.0'
     }
     buildFeatures {
-        viewBinding true
+        dataBinding = true
+        viewBinding = true
     }
     tasks.register("prepareKotlinBuildScriptModel"){}
 }

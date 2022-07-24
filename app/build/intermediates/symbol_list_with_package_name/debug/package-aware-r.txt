@@ -2512,6 +2512,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ellipse_2
 drawable group_4
+drawable ic_baseline_chevron_left_24
+drawable ic_baseline_chevron_right_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2649,6 +2651,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_custom_calendar
 id add
 id alertTitle
 id aligned
@@ -2683,7 +2686,6 @@ id buttonPanel
 id button_first
 id button_second
 id cache_measures
-id calendarView
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -2725,6 +2727,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dataBinding
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2921,6 +2924,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id onInterceptTouchReturnSwipe
 id outline
 id outward
@@ -2946,6 +2951,7 @@ id ratio
 id rectangle_7
 id rectangle_9
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3052,6 +3058,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
