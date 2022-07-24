@@ -2868,6 +2868,7 @@ int id matrix 0x7f090120
 int id message 0x7f090121
 int id middle 0x7f090122
 int id mini 0x7f090123
+int id monthYearText 0x7f090214
 int id month_grid 0x7f090124
 int id month_navigation_bar 0x7f090125
 int id month_navigation_fragment_toggle 0x7f090126
@@ -2913,6 +2914,7 @@ int id navigation_header_container 0x7f09014d
 int id never 0x7f09014e
 int id neverCompleteToEnd 0x7f09014f
 int id neverCompleteToStart 0x7f090150
+int id nextBtn 0x7f090215
 int id noScroll 0x7f090151
 int id noState 0x7f090152
 int id none 0x7f090153
@@ -2943,6 +2945,7 @@ int id percent 0x7f09016b
 int id pin 0x7f09016c
 int id position 0x7f09016d
 int id postLayout 0x7f09016e
+int id preBtn 0x7f090216
 int id progress_circular 0x7f09016f
 int id progress_horizontal 0x7f090170
 int id radio 0x7f090171

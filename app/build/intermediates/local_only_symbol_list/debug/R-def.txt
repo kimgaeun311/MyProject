@@ -45,8 +45,11 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id monthYearText
 id nav_graph
 id nav_host_fragment_content_activity_splash
+id nextBtn
+id preBtn
 id rectangle_7
 id rectangle_9
 id recyclerView

@@ -22,11 +22,13 @@
 
 
             <ImageButton
+                android:id="@+id/preBtn"
                 android:layout_width="25dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/ic_baseline_chevron_left_24"/>
 
             <TextView
+                android:id="@+id/monthYearText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
@@ -36,6 +38,12 @@
                 android:fontFamily="@font/zomfont"
                 android:textColor="@color/blue_01"
                 tools:ignore="Suspicious0dp" />
+
+            <ImageButton
+                android:id="@+id/nextBtn"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_chevron_right_24"/>
 
 
         </LinearLayout>
