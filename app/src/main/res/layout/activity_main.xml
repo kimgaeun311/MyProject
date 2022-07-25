@@ -14,8 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
@@ -36,6 +35,7 @@
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:fontFamily="@font/zomfont"
+                android:textStyle="bold"
                 android:textColor="@color/blue_01"
                 tools:ignore="Suspicious0dp" />
 
@@ -51,8 +51,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:background="@color/blue_01"
             android:orientation="horizontal">
 
