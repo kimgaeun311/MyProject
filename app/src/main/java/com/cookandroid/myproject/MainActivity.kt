@@ -5,9 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.cookandroid.myproject.databinding.ActivityMainBinding
 import java.time.LocalDate
+import java.time.YearMonth
 import java.time.format.DateTimeFormatter
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,9 +41,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setMonthView(){
         binding.monthYearText.text = monthYearFromDate(selectedDate)
+
+        val dayList = dayInMonthArray(selectedDate)
+
+        val adapter = CalendarAdapter(dayList)
+
+        var manager: RecyclerView.LayoutManager = GridLayoutManager(applicationContext, 7)
+
+        binding.recyclerView.layoutManager = manager
+
+        binding.recyclerView.adapter = adapter
+
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -48,5 +64,30 @@ class MainActivity : AppCompatActivity() {
         var formatter = DateTimeFormatter.ofPattern("MM월 yyyy")
         return date.format(formatter)
     }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun dayInMonthArray(date: LocalDate): ArrayList<String>{
+
+        var dayList = ArrayList<String>()
+
+        var yearMonth = YearMonth.from(date)
+
+        var lastDay = yearMonth.lengthOfMonth()
+
+        var firstDay = selectedDate.withDayOfMonth(1)
+
+        var dayOfWeek = firstDay.dayOfWeek.value
+
+        for(i in 1..41){
+            if(i <= dayOfWeek || i > (lastDay + dayOfWeek)){
+                dayList.add("")
+            }else{
+                dayList.add((i-dayOfWeek).toString())
+            }
+        }
+
+        return dayList
+    }
+
 
 }

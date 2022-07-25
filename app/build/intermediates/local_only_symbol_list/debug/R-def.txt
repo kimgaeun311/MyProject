@@ -35,6 +35,7 @@ id activity_custom_calendar
 id button
 id button_first
 id button_second
+id dayText
 id editText
 id ellipse_2
 id gosettingTxt
@@ -69,6 +70,7 @@ layout activity_click_day
 layout activity_login
 layout activity_main
 layout activity_splash
+layout calendar_cell
 layout content_activity_splash
 layout fragment_first
 layout fragment_second

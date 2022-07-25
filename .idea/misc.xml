@@ -1,30 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/GURU2/MyProject/app/src/main/res/layout/activity_login.xml" value="0.15625" />
-        <entry key="..\:/GURU2/MyProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/GURU2/MyProject/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Myproject/app/src/main/res/drawable/ic_baseline_chevron_left_24.xml" value="0.21" />
-        <entry key="..\:/Myproject/app/src/main/res/drawable/ic_baseline_keyboard_arrow_left_24.xml" value="0.1" />
-        <entry key="..\:/Myproject/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.1" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/activity_click_day.xml" value="0.3564102564102564" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/activity_login.xml" value="0.3564102564102564" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/activity_main.xml" value="0.43686868686868685" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/activity_splash.xml" value="0.3564102564102564" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/content_activity_splash.xml" value="0.3564102564102564" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/fragment_first.xml" value="0.3564102564102564" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/fragment_second.xml" value="0.3564102564102564" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/goal_setting.xml" value="0.3564102564102564" />
-        <entry key="..\:/Users/kengj/AndroidStudioProjects/MyProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
-  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

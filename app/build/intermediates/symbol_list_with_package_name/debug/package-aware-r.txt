@@ -2729,6 +2729,7 @@ id customPanel
 id cut
 id dataBinding
 id date_picker_actions
+id dayText
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3209,6 +3210,7 @@ layout activity_click_day
 layout activity_login
 layout activity_main
 layout activity_splash
+layout calendar_cell
 layout content_activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
