@@ -3,6 +3,7 @@ package com.cookandroid.myproject
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
@@ -17,8 +18,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    lateinit var selectedDate: LocalDate
-
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,27 +25,30 @@ class MainActivity : AppCompatActivity() {
         title = "좀좀일기"
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        selectedDate = LocalDate.now()
+
+        CalendarUtill.selectedDate = LocalDate.now()
 
         setMonthView()
 
         binding.preBtn.setOnClickListener {
-            selectedDate = selectedDate.minusMonths(1)
+
+            CalendarUtill.selectedDate = CalendarUtill.selectedDate.minusMonths(1)
             setMonthView()
         }
 
         binding.nextBtn.setOnClickListener {
-            selectedDate = selectedDate.plusMonths(1)
+            CalendarUtill.selectedDate = CalendarUtill.selectedDate.plusMonths(1)
             setMonthView()
         }
     }
 
 
+
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setMonthView(){
-        binding.monthYearText.text = monthYearFromDate(selectedDate)
+        binding.monthYearText.text = monthYearFromDate(CalendarUtill.selectedDate)
 
-        val dayList = dayInMonthArray(selectedDate)
+        val dayList = dayInMonthArray(CalendarUtill.selectedDate)
 
         val adapter = CalendarAdapter(dayList)
 
@@ -66,28 +68,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    private fun dayInMonthArray(date: LocalDate): ArrayList<String>{
+    private fun dayInMonthArray(date: LocalDate): ArrayList<LocalDate?>{
 
-        var dayList = ArrayList<String>()
+        var dayList = ArrayList<LocalDate?>()
 
         var yearMonth = YearMonth.from(date)
 
         var lastDay = yearMonth.lengthOfMonth()
 
-        var firstDay = selectedDate.withDayOfMonth(1)
+        var firstDay = CalendarUtill.selectedDate.withDayOfMonth(1)
 
         var dayOfWeek = firstDay.dayOfWeek.value
 
         for(i in 1..41){
             if(i <= dayOfWeek || i > (lastDay + dayOfWeek)){
-                dayList.add("")
+                dayList.add(null)
             }else{
-                dayList.add((i-dayOfWeek).toString())
+                dayList.add(LocalDate.of(CalendarUtill.selectedDate.year, CalendarUtill.selectedDate.monthValue, i-dayOfWeek))
             }
         }
 
         return dayList
     }
-
 
 }
