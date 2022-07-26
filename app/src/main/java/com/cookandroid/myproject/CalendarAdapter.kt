@@ -54,8 +54,8 @@ class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.
 
             var yearMonDay = "$iYear 년 $iMonth 월 $iDay 일"
 
-            dayChange(holder.itemView.context)
 
+            dayChange(holder.itemView.context)
             Toast.makeText(holder.itemView.context, yearMonDay, Toast.LENGTH_SHORT).show()
 
 
@@ -71,7 +71,7 @@ class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.
 
     fun dayChange(context: Context) {
 
-        val intent = Intent(context, LoginActivity::class.java)
+        val intent = Intent(context, dayClickActivity::class.java)
         context.startActivities(arrayOf(intent))
     }
 

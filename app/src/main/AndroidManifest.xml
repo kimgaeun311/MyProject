@@ -14,6 +14,10 @@
         android:theme="@style/Theme.MyProject"
         tools:targetApi="31">
         <activity
+            android:name=".dayClickActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".activity_splash"
             android:exported="true"
             android:label="@string/title_activity_splash"
