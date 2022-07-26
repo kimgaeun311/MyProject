@@ -1,8 +1,12 @@
 package com.cookandroid.myproject
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
@@ -15,6 +19,10 @@ import java.util.ArrayList
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    lateinit var goal_plus : ImageView
+    lateinit var modify_button: Button
+    lateinit var delete_button: Button
+    lateinit var plus_button: Button
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +45,24 @@ class MainActivity : AppCompatActivity() {
         binding.nextBtn.setOnClickListener {
             CalendarUtill.selectedDate = CalendarUtill.selectedDate.plusMonths(1)
             setMonthView()
+        }
+
+        goal_plus= findViewById(R.id.goal_plus)
+        modify_button=findViewById(R.id.modify_button)
+        delete_button=findViewById(R.id.delete_button)
+        plus_button=findViewById(R.id.plus_button)
+
+
+        modify_button.setOnClickListener {
+            Toast.makeText(this, "해당 좀좀일기가 수정되었습니다.", Toast.LENGTH_SHORT).show()
+        }
+
+        delete_button.setOnClickListener {
+            Toast.makeText(this, "해당 좀좀일기가 삭제되었습니다.", Toast.LENGTH_SHORT).show()
+        }
+
+        plus_button.setOnClickListener {
+            Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
     }
 
