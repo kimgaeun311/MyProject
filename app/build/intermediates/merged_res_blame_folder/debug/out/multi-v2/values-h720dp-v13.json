@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.cookandroid.myproject.app-mergeDebugResources-3:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.cookandroid.myproject.app-mergeDebugResources-45:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\김리연\\.gradle\\caches\\transforms-3\\b337e567a97552d20c2e1a823a166141\\transformed\\appcompat-1.4.2\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\kengj\\.gradle\\caches\\transforms-3\\b337e567a97552d20c2e1a823a166141\\transformed\\appcompat-1.4.2\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
