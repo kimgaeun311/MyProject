@@ -140,6 +140,10 @@
         "source": "C:\\Users\\김리연\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.cookandroid.myproject.app-merged_res-5:/drawable_bg_spinner_list.xml.flat",
+        "source": "com.cookandroid.myproject.app-main-7:/drawable/bg_spinner_list.xml"
+    },
+    {
         "merged": "C:\\Users\\김리연\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-5:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\김리연\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-7:\\drawable-v24\\ic_launcher_foreground.xml"
     },
