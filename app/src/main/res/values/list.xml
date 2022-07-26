@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_list">
+        <item>목표를 선택하세요</item>
+        <item>한달동안 일기 매일 쓰기 </item>
+        <item>7시간 잠자기</item>
+    </string-array></resources>

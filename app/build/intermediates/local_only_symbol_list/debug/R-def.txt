@@ -14,6 +14,7 @@ color teal_700
 color white
 color yellow
 dimen fab_margin
+drawable bg_spinner_list
 drawable ellipse_2
 drawable group_4
 drawable ic_baseline_chevron_left_24
@@ -22,6 +23,11 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable rectangle_7
 drawable rectangle_9
+drawable spinner
+drawable spinner2
+drawable spinner3
+drawable spinner4
+drawable spinner5
 drawable zom1
 drawable zom2
 drawable zom3
@@ -46,6 +52,7 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id list
 id monthYearText
 id nav_graph
 id nav_host_fragment_content_activity_splash
@@ -56,6 +63,7 @@ id rectangle_9
 id recyclerView
 id settingText
 id some_id
+id spinner_list
 id text1
 id textView
 id textView2
@@ -63,7 +71,6 @@ id textView4
 id textView5
 id textView6
 id textView7
-id textView8
 id textview_first
 id textview_second
 layout activity_click_day
@@ -75,6 +82,7 @@ layout content_activity_splash
 layout fragment_first
 layout fragment_second
 layout goal_setting
+layout spinner_text
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
