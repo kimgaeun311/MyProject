@@ -48,6 +48,7 @@ id button_second
 id dayText
 id delete_button
 id editText
+id edtID
 id ellipse_2
 id goal_plus
 id gosettingTxt
