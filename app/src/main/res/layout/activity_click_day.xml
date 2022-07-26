@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClickDayActivity">
+    tools:context=".dayClickActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="144dp"
+        android:layout_marginEnd="268dp"
         android:fontFamily="@font/zomfont"
         android:text="이 날의 좀좀목표"
         android:textColor="@color/blue_01"
@@ -44,7 +45,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="67dp"
         android:fontFamily="@font/zomfont"
-        android:text="7월13일"
+        android:text="7월26일"
         android:textColor="@color/blue_01"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
@@ -53,29 +54,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47000003" />
-
-    <TextView
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="189dp"
-        android:text="List"
-        android:textColor="@color/brown" />
-
-
-    <Spinner
-        android:id="@+id/spinner_list"
-        android:layout_width="379dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/bg_spinner_list" />
 
 
 
