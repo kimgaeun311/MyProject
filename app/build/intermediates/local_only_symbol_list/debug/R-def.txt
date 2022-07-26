@@ -16,13 +16,16 @@ color white
 color yellow
 dimen fab_margin
 drawable bg_spinner_list
+drawable diary_blank
 drawable ellipse_2
+drawable goal_blank
 drawable group_4
 drawable ic_baseline_chevron_left_24
 drawable ic_baseline_chevron_right_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable my_selector
+drawable plus
 drawable rectangle_7
 drawable rectangle_9
 drawable spinner
@@ -40,7 +43,6 @@ id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id activity_custom_calendar
-id button
 id button_first
 id button_second
 id dayText
@@ -55,6 +57,7 @@ id imageView4
 id imageView5
 id imageView6
 id list
+id login_button
 id monthYearText
 id nav_graph
 id nav_host_fragment_content_activity_splash
