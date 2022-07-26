@@ -1,7 +1,8 @@
 package com.cookandroid.myproject
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.Color
-import android.graphics.drawable.Drawable
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import java.time.LocalDate
 import java.util.ArrayList
@@ -19,6 +19,7 @@ class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.
     class ItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         val dayText: TextView = itemView.findViewById(R.id.dayText)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -50,15 +51,28 @@ class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.
             var iMonth = day?.monthValue
             var iDay = day?.dayOfMonth
 
+
             var yearMonDay = "$iYear 년 $iMonth 월 $iDay 일"
 
+            dayChange(holder.itemView.context)
+
             Toast.makeText(holder.itemView.context, yearMonDay, Toast.LENGTH_SHORT).show()
+
+
         }
     }
+
 
     override fun getItemCount(): Int {
 
         return dayList.size
+    }
+
+
+    fun dayChange(context: Context) {
+
+        val intent = Intent(context, LoginActivity::class.java)
+        context.startActivities(arrayOf(intent))
     }
 
 
