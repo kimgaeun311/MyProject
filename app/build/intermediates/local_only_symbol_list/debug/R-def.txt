@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array my_list
 color black
 color blue_01
 color blue_02
@@ -14,13 +15,13 @@ color teal_700
 color white
 color yellow
 dimen fab_margin
-drawable bg_spinner_list
 drawable ellipse_2
 drawable group_4
 drawable ic_baseline_chevron_left_24
 drawable ic_baseline_chevron_right_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable my_selector
 drawable rectangle_7
 drawable rectangle_9
 drawable spinner
@@ -63,7 +64,6 @@ id rectangle_9
 id recyclerView
 id settingText
 id some_id
-id spinner_list
 id text1
 id textView
 id textView2
