@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.cookandroid.myproject.app-mergeDebugResources-3:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.cookandroid.myproject.app-mergeDebugResources-45:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\김리연\\.gradle\\caches\\transforms-3\\5ecf78887d09c8d5772bfd0d13860753\\transformed\\material-1.6.1\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\kengj\\.gradle\\caches\\transforms-3\\5ecf78887d09c8d5772bfd0d13860753\\transformed\\material-1.6.1\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
