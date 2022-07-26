@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Myproject/app/src/main/res/drawable/my_selector.xml" value="0.1" />
+        <entry key="..\:/Myproject/app/src/main/res/layout/activity_click_day.xml" value="0.18489583333333334" />
+        <entry key="..\:/Myproject/app/src/main/res/layout/activity_login.xml" value="0.18020833333333333" />
         <entry key="..\:/Myproject/app/src/main/res/layout/activity_main.xml" value="0.18489583333333334" />
         <entry key="..\:/Myproject/app/src/main/res/layout/activity_splash.xml" value="0.18489583333333334" />
-        <entry key="..\:/Myproject/app/src/main/res/layout/calendar_cell.xml" value="0.18489583333333334" />
+        <entry key="..\:/Myproject/app/src/main/res/layout/calendar_cell.xml" value="0.33" />
+        <entry key="..\:/Myproject/app/src/main/res/layout/content_activity_splash.xml" value="0.18489583333333334" />
+        <entry key="..\:/Myproject/app/src/main/res/layout/fragment_first.xml" value="0.18489583333333334" />
+        <entry key="..\:/Myproject/app/src/main/res/layout/select_day.xml" value="0.18489583333333334" />
       </map>
     </option>
   </component>
