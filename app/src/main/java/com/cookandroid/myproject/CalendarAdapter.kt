@@ -55,7 +55,9 @@ class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.
             var yearMonDay = "$iYear 년 $iMonth 월 $iDay 일"
 
 
-            dayChange(holder.itemView.context)
+            if(iDay==26){
+                dayChange(holder.itemView.context)
+            }
             Toast.makeText(holder.itemView.context, yearMonDay, Toast.LENGTH_SHORT).show()
 
 
