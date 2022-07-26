@@ -64,6 +64,11 @@ class MainActivity : AppCompatActivity() {
         plus_button.setOnClickListener {
             Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
+
+        goal_plus.setOnClickListener {
+            val intent = Intent(this, SettingGoal::class.java)
+            startActivity(intent)
+        }
     }
 
 
