@@ -48,7 +48,9 @@ id button_second
 id dayText
 id delete_button
 id editText
+id edtID
 id ellipse_2
+id goal_editText
 id goal_plus
 id gosettingTxt
 id group_4
@@ -73,7 +75,6 @@ id rectangle_7
 id rectangle_9
 id recyclerView
 id scrollView2
-id settingText
 id some_id
 id text1
 id textView

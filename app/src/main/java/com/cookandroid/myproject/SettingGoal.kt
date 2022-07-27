@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 
 class SettingGoal : AppCompatActivity() {
     lateinit var goal_plus_button:View
@@ -14,7 +15,10 @@ class SettingGoal : AppCompatActivity() {
 
         goal_plus_button=findViewById(R.id.rectangle_7)
         goal_plus_button.setOnClickListener {
+            Toast.makeText(this, "좀좀목표가 등록되었습니다.", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent) }
+            startActivity(intent)}
+
+
     }
 }
