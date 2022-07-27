@@ -76,6 +76,7 @@ id recyclerView
 id scrollView2
 id settingText
 id some_id
+id spinner_list
 id text1
 id textView
 id textView2
