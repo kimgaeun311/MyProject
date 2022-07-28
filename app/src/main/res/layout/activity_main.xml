@@ -155,29 +155,24 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.050000012" />
 
+
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="328dp"
+                android:layout_height="40dp"
                 android:layout_margin="10dp"
+
                 android:spinnerMode="dropdown"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.473"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.167" />
+                app:layout_constraintVertical_bias="0.128"
+                app:srcCompat="@drawable/goal_blank"
+                />
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.13999999"
-                app:srcCompat="@drawable/goal_blank" />
+
 
             <ImageView
                 android:id="@+id/goal_plus"

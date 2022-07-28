@@ -54,7 +54,6 @@ id goal_plus
 id gosettingTxt
 id group_4
 id imageView
-id imageView12
 id imageView2
 id imageView3
 id imageView4
@@ -79,6 +78,7 @@ id some_id
 id spinner
 id text1
 id textView
+id textView1
 id textView2
 id textView4
 id textView5
