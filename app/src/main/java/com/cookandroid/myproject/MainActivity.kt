@@ -73,13 +73,23 @@ class MainActivity : AppCompatActivity() {
         }
 
         diary_search.setOnClickListener {
+            sqlDB = myHelper.readableDatabase
+            var cursor: Cursor
+
+            cursor = sqlDB.rawQuery("SELECT * FROM diaryTBL WHERE dateText='"+dateEditText.text.toString()+"';", null)
+
+            dairyEditText.setText( cursor.getString(1))
+
+            cursor.close()
+            sqlDB.close()
+
             Toast.makeText(this, "해당 날짜의 일기 조회 완료.", Toast.LENGTH_SHORT).show()
         }
 
         modify_button.setOnClickListener {
             sqlDB=myHelper.writableDatabase
 
-            sqlDB.execSQL("UPDATE diaryTBL SET diaryText= "+dairyEditText.text+" WHERE dateText = '"+
+            sqlDB.execSQL("UPDATE diaryTBL SET diaryText= '"+dairyEditText.text+"' WHERE dateText = '"+
                     dateEditText.text.toString()+"';")
 
             sqlDB.close()
