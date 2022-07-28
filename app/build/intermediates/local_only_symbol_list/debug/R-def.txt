@@ -17,6 +17,7 @@ color yellow
 dimen fab_margin
 drawable bg_spinner_list
 drawable diary_blank
+drawable diary_search
 drawable ellipse_2
 drawable goal_blank
 drawable group_4
@@ -46,11 +47,15 @@ id action_SecondFragment_to_FirstFragment
 id activity_custom_calendar
 id button_first
 id button_second
+id dateEditText
 id dayText
 id delete_button
+id diaryEditText
+id diary_search
 id editText
 id edtID
 id ellipse_2
+id goal_editText
 id goal_plus
 id gosettingTxt
 id group_4
@@ -74,7 +79,6 @@ id rectangle_7
 id rectangle_9
 id recyclerView
 id scrollView2
-id settingText
 id some_id
 id spinner
 id spinner2
