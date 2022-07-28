@@ -24,10 +24,6 @@
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-49:\\drawable\\rectangle_9.png"
     },
     {
-        "merged": "com.cookandroid.myproject.app-merged_res-47:/drawable_bg_spinner_list.xml.flat",
-        "source": "com.cookandroid.myproject.app-main-49:/drawable/bg_spinner_list.xml"
-    },
-    {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-47:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-49:\\mipmap-mdpi\\ic_launcher.webp"
     },
@@ -186,6 +182,10 @@
     {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-47:\\drawable_spinner2.png.flat",
         "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-49:\\drawable\\spinner2.png"
+    },
+    {
+        "merged": "com.cookandroid.myproject.app-merged_res-47:/layout_activity_main.xml.flat",
+        "source": "com.cookandroid.myproject.app-main-49:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-47:\\drawable_my_selector.xml.flat",

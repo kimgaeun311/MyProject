@@ -19,7 +19,7 @@ class dayClickActivity : AppCompatActivity() {
     //var list = resources.getStringArray(R.array.my_list) //오류남...
 
 
-    var lists = DateFormatSymbols().months
+    //var lists = DateFormatSymbols().months
 
     lateinit var binding : ActivityMainBinding // 1
 
@@ -29,7 +29,7 @@ class dayClickActivity : AppCompatActivity() {
         setContentView(R.layout.activity_click_day)
 
         val spinner: Spinner = findViewById(R.id.spinner)
-// Create an ArrayAdapter using the string array and a default spinner layout
+
         ArrayAdapter.createFromResource(
             this,
             R.array.my_list,
