@@ -33,6 +33,7 @@ drawable spinner2
 drawable spinner3
 drawable spinner4
 drawable spinner5
+drawable spinner6
 drawable zom1
 drawable zom2
 drawable zom3
