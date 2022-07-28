@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -20,11 +21,11 @@ import java.time.LocalDate
 import java.time.YearMonth
 import java.time.format.DateTimeFormatter
 import java.util.ArrayList
-class MainActivity : AppCompatActivity() {
 
+class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     lateinit var dateEditText: EditText
-    lateinit var dairyEditText: EditText
+    lateinit var diaryEditText: EditText
     lateinit var goal_plus : ImageView
     lateinit var diary_search:ImageView
     lateinit var modify_button: Button
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         delete_button=findViewById(R.id.delete_button)
         plus_button=findViewById(R.id.plus_button)
         dateEditText=findViewById(R.id.dateEditText)
-        dairyEditText=findViewById(R.id.dairyEditText)
+        diaryEditText=findViewById(R.id.diaryEditText)
         myHelper = myDBHelper(this)
 
 
@@ -75,21 +76,24 @@ class MainActivity : AppCompatActivity() {
         diary_search.setOnClickListener {
             sqlDB = myHelper.readableDatabase
             var cursor: Cursor
-
             cursor = sqlDB.rawQuery("SELECT * FROM diaryTBL WHERE dateText='"+dateEditText.text.toString()+"';", null)
-
-            dairyEditText.setText( cursor.getString(1))
-
+            var diary_toast:String
+            if (cursor.moveToNext()){
+                diary_toast=cursor.getString(1)
+                diaryEditText.setText(diary_toast)
+                Toast.makeText(this, "해당 날짜의 일기 조회 완료", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                diaryEditText.setText("(해당 날짜의 일기 없음)")
+            }
             cursor.close()
             sqlDB.close()
-
-            Toast.makeText(this, "해당 날짜의 일기 조회 완료.", Toast.LENGTH_SHORT).show()
         }
 
         modify_button.setOnClickListener {
             sqlDB=myHelper.writableDatabase
 
-            sqlDB.execSQL("UPDATE diaryTBL SET diaryText= '"+dairyEditText.text+"' WHERE dateText = '"+
+            sqlDB.execSQL("UPDATE diaryTBL SET diaryText= '"+diaryEditText.text+"' WHERE dateText = '"+
                     dateEditText.text.toString()+"';")
 
             sqlDB.close()
@@ -110,7 +114,7 @@ class MainActivity : AppCompatActivity() {
 
             sqlDB.execSQL(
                 "INSERT INTO diaryTBL VALUES ('" + dateEditText.text.toString() + "','" +
-                        dairyEditText.text.toString() + "');")
+                        diaryEditText.text.toString() + "');")
 
             sqlDB.close()
 
@@ -170,7 +174,7 @@ class MainActivity : AppCompatActivity() {
     inner class  myDBHelper(context: Context): SQLiteOpenHelper(context,"diaryDB",null,1){
 
         override fun onCreate(db: SQLiteDatabase?) {
-            db!!.execSQL("Create TABLE diaryTBL (dateText TEXT PRIMARY KEY, diaryText TEXT);")
+            db!!.execSQL("Create TABLE diaryTBL (dateText CHAR PRIMARY KEY, diaryText CHAR);")
         }
 
         override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {

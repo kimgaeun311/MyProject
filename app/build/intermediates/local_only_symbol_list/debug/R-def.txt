@@ -46,10 +46,10 @@ id action_SecondFragment_to_FirstFragment
 id activity_custom_calendar
 id button_first
 id button_second
-id dairyEditText
 id dateEditText
 id dayText
 id delete_button
+id diaryEditText
 id diary_search
 id editText
 id edtID
