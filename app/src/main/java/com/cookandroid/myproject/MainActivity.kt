@@ -1,10 +1,14 @@
 package com.cookandroid.myproject
-
+import android.content.Context
+import android.database.Cursor
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
@@ -19,10 +23,15 @@ import java.util.ArrayList
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    lateinit var dateEditText: EditText
+    lateinit var dairyEditText: EditText
     lateinit var goal_plus : ImageView
+    lateinit var diary_search:ImageView
     lateinit var modify_button: Button
     lateinit var delete_button: Button
     lateinit var plus_button: Button
+    lateinit var myHelper:myDBHelper
+    lateinit var sqlDB: SQLiteDatabase
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,26 +57,54 @@ class MainActivity : AppCompatActivity() {
         }
 
         goal_plus= findViewById(R.id.goal_plus)
+        diary_search=findViewById(R.id.diary_search)
         modify_button=findViewById(R.id.modify_button)
         delete_button=findViewById(R.id.delete_button)
         plus_button=findViewById(R.id.plus_button)
+        dateEditText=findViewById(R.id.dateEditText)
+        dairyEditText=findViewById(R.id.dairyEditText)
+        myHelper = myDBHelper(this)
 
 
-        modify_button.setOnClickListener {
-            Toast.makeText(this, "해당 좀좀일기가 수정되었습니다.", Toast.LENGTH_SHORT).show()
-        }
-
-        delete_button.setOnClickListener {
-            Toast.makeText(this, "해당 좀좀일기가 삭제되었습니다.", Toast.LENGTH_SHORT).show()
-        }
-
-        plus_button.setOnClickListener {
-            Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
-        }
 
         goal_plus.setOnClickListener {
             val intent = Intent(this, SettingGoal::class.java)
             startActivity(intent)
+        }
+
+        diary_search.setOnClickListener {
+            Toast.makeText(this, "해당 날짜의 일기 조회 완료.", Toast.LENGTH_SHORT).show()
+        }
+
+        modify_button.setOnClickListener {
+            sqlDB=myHelper.writableDatabase
+
+            sqlDB.execSQL("UPDATE diaryTBL SET diaryText= "+dairyEditText.text+" WHERE dateText = '"+
+                    dateEditText.text.toString()+"';")
+
+            sqlDB.close()
+
+            Toast.makeText(this, "해당 좀좀일기가 수정되었습니다.", Toast.LENGTH_SHORT).show()
+        }
+
+        delete_button.setOnClickListener {
+            sqlDB=myHelper.writableDatabase
+
+            sqlDB.execSQL("DELETE FROM diaryTBL WHERE dateText='"+dateEditText.text.toString()+"';")
+            sqlDB.close()
+            Toast.makeText(this, "해당 좀좀일기가 삭제되었습니다.", Toast.LENGTH_SHORT).show()
+        }
+
+        plus_button.setOnClickListener {
+            sqlDB = myHelper.writableDatabase
+
+            sqlDB.execSQL(
+                "INSERT INTO diaryTBL VALUES ('" + dateEditText.text.toString() + "','" +
+                        dairyEditText.text.toString() + "');")
+
+            sqlDB.close()
+
+            Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -118,6 +155,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         return dayList
+    }
+
+    inner class  myDBHelper(context: Context): SQLiteOpenHelper(context,"diaryDB",null,1){
+
+        override fun onCreate(db: SQLiteDatabase?) {
+            db!!.execSQL("Create TABLE diaryTBL (dateText TEXT PRIMARY KEY, diaryText TEXT);")
+        }
+
+        override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+            db!!.execSQL("DROP TABLE IF EXISTS diaryTBL")
+            onCreate(db)
+        }
     }
 
 }
