@@ -41,6 +41,7 @@ class dayClickActivity : AppCompatActivity() {
             spinner.adapter = adapter
         }
 
+
         /*
         binding = ActivityMainBinding.inflate(layoutInflater) //1
 

@@ -114,6 +114,8 @@ string next
 string previous
 string second_fragment_label
 string title_activity_splash
+style SpinnerDivideStyle
+style SpinnerTheme
 style Theme.MyProject
 style Theme.MyProject.AppBarOverlay
 style Theme.MyProject.NoActionBar
