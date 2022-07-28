@@ -40,17 +40,17 @@
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="68dp"
+        android:layout_width="100dp"
         android:layout_height="37dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="242dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="236dp"
         android:fontFamily="@font/zomfont"
         android:gravity="bottom"
         android:text="좀좀목표"
         android:textColor="#767ACF"
-        android:textSize="15dp" />
+        android:textSize="19dp" />
 
     <View
         android:id="@+id/rectangle_9"
@@ -62,24 +62,30 @@
         android:layout_marginTop="282dp"
         android:background="@drawable/rectangle_9" />
 
-    <TextView
-        android:id="@+id/settingText"
-        android:layout_width="188dp"
-        android:layout_height="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="288dp"
-        android:fontFamily="@font/zomfont"
-        android:gravity="bottom"
-        android:text="목표를 입력해주세요."
-        android:textColor="#767ACF"
-        android:textSize="10dp" />
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="196dp">
+
+        <EditText
+            android:id="@+id/goal_editText"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="200dp"
+            android:hint="목표를 입력해주세요."
+            android:inputType="textMultiLine"
+            android:textSize="17dp" />
+    </ScrollView>
 
     <Button
         android:id="@+id/rectangle_7"
         android:layout_width="323dp"
-        android:layout_height="31dp"
+        android:layout_height="37dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="49dp"
@@ -88,7 +94,7 @@
         android:fontFamily="@font/zomfont"
         android:text="등록하기"
         android:textColor="#FFFFFF"
-        android:textSize="10dp" />
+        android:textSize="13dp" />
 
 
     <TextView

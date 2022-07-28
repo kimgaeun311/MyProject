@@ -9,7 +9,7 @@ class dayClickActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_click_day)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+       supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

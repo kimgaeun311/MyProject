@@ -2,7 +2,9 @@ package com.cookandroid.myproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 
 class SettingGoal : AppCompatActivity() {
     lateinit var goal_plus_button:View
@@ -14,7 +16,24 @@ class SettingGoal : AppCompatActivity() {
 
         goal_plus_button=findViewById(R.id.rectangle_7)
         goal_plus_button.setOnClickListener {
+            Toast.makeText(this, "좀좀목표가 등록되었습니다.", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent) }
+            startActivity(intent)}
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item?.itemId){
+            android.R.id.home -> {
+                finish()
+                return true
+            }
+            else -> {
+                return super.onOptionsItemSelected(item)
+            }
+        }
     }
 }

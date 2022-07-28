@@ -11,7 +11,7 @@
 9-->C:\Myproject\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Myproject\app\src\main\AndroidManifest.xml:6:5-46:19
+11-->C:\Myproject\app\src\main\AndroidManifest.xml:6:5-50:19
 12        android:allowBackup="true"
 12-->C:\Myproject\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,96 +34,106 @@
 23        android:theme="@style/Theme.MyProject" >
 23-->C:\Myproject\app\src\main\AndroidManifest.xml:14:9-47
 24        <activity
-24-->C:\Myproject\app\src\main\AndroidManifest.xml:16:9-18:40
-25            android:name="com.cookandroid.myproject.dayClickActivity"
+24-->C:\Myproject\app\src\main\AndroidManifest.xml:16:9-20:45
+25            android:name="com.cookandroid.myproject.registerActivity"
 25-->C:\Myproject\app\src\main\AndroidManifest.xml:17:13-45
-26            android:exported="false" />
+26            android:exported="false"
 26-->C:\Myproject\app\src\main\AndroidManifest.xml:18:13-37
-27        <activity
-27-->C:\Myproject\app\src\main\AndroidManifest.xml:20:9-30:20
-28            android:name="com.cookandroid.myproject.activity_splash"
-28-->C:\Myproject\app\src\main\AndroidManifest.xml:21:13-44
-29            android:exported="true"
-29-->C:\Myproject\app\src\main\AndroidManifest.xml:22:13-36
-30            android:label="@string/title_activity_splash"
-30-->C:\Myproject\app\src\main\AndroidManifest.xml:23:13-58
-31            android:theme="@style/Theme.MyProject.NoActionBar" >
-31-->C:\Myproject\app\src\main\AndroidManifest.xml:24:13-63
-32            <intent-filter>
-32-->C:\Myproject\app\src\main\AndroidManifest.xml:25:13-29:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Myproject\app\src\main\AndroidManifest.xml:26:17-69
-33-->C:\Myproject\app\src\main\AndroidManifest.xml:26:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Myproject\app\src\main\AndroidManifest.xml:28:17-77
-35-->C:\Myproject\app\src\main\AndroidManifest.xml:28:27-74
-36            </intent-filter>
-37        </activity>
-38        <activity
-38-->C:\Myproject\app\src\main\AndroidManifest.xml:31:9-33:40
-39            android:name="com.cookandroid.myproject.LoginActivity"
-39-->C:\Myproject\app\src\main\AndroidManifest.xml:32:13-42
-40            android:exported="false" />
-40-->C:\Myproject\app\src\main\AndroidManifest.xml:33:13-37
-41        <activity
-41-->C:\Myproject\app\src\main\AndroidManifest.xml:34:9-36:40
-42            android:name="com.cookandroid.myproject.SettingGoal"
-42-->C:\Myproject\app\src\main\AndroidManifest.xml:35:13-40
-43            android:exported="false" />
-43-->C:\Myproject\app\src\main\AndroidManifest.xml:36:13-37
-44        <activity
-44-->C:\Myproject\app\src\main\AndroidManifest.xml:37:9-45:20
-45            android:name="com.cookandroid.myproject.MainActivity"
-45-->C:\Myproject\app\src\main\AndroidManifest.xml:38:13-41
-46            android:exported="true" >
-46-->C:\Myproject\app\src\main\AndroidManifest.xml:39:13-36
-47            <intent-filter>
-47-->C:\Myproject\app\src\main\AndroidManifest.xml:25:13-29:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Myproject\app\src\main\AndroidManifest.xml:26:17-69
-48-->C:\Myproject\app\src\main\AndroidManifest.xml:26:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->C:\Myproject\app\src\main\AndroidManifest.xml:28:17-77
-50-->C:\Myproject\app\src\main\AndroidManifest.xml:28:27-74
-51            </intent-filter>
-52        </activity>
-53
-54        <uses-library
-54-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-55            android:name="androidx.window.extensions"
-55-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-56            android:required="false" />
-56-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-57        <uses-library
-57-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-58            android:name="androidx.window.sidecar"
-58-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-59            android:required="false" />
-59-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-60
-61        <provider
-61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-62            android:name="androidx.startup.InitializationProvider"
-62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-63            android:authorities="com.cookandroid.myproject.androidx-startup"
-63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-64            android:exported="false" >
-64-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-65            <meta-data
-65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-67                android:value="androidx.startup" />
-67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-68            <meta-data
-68-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\김리연\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-69-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\김리연\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-70                android:value="androidx.startup" />
-70-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\김리연\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-71        </provider>
-72    </application>
-73
-74</manifest>
+27            android:windowSoftInputMode="adjustPan" />
+27-->C:\Myproject\app\src\main\AndroidManifest.xml:19:13-52
+28        <activity
+28-->C:\Myproject\app\src\main\AndroidManifest.xml:21:9-23:40
+29            android:name="com.cookandroid.myproject.dayClickActivity"
+29-->C:\Myproject\app\src\main\AndroidManifest.xml:22:13-45
+30            android:exported="false" />
+30-->C:\Myproject\app\src\main\AndroidManifest.xml:23:13-37
+31        <activity
+31-->C:\Myproject\app\src\main\AndroidManifest.xml:24:9-34:20
+32            android:name="com.cookandroid.myproject.activity_splash"
+32-->C:\Myproject\app\src\main\AndroidManifest.xml:25:13-44
+33            android:exported="true"
+33-->C:\Myproject\app\src\main\AndroidManifest.xml:26:13-36
+34            android:label="@string/title_activity_splash"
+34-->C:\Myproject\app\src\main\AndroidManifest.xml:27:13-58
+35            android:theme="@style/Theme.MyProject.NoActionBar" >
+35-->C:\Myproject\app\src\main\AndroidManifest.xml:28:13-63
+36            <intent-filter>
+36-->C:\Myproject\app\src\main\AndroidManifest.xml:29:13-33:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Myproject\app\src\main\AndroidManifest.xml:30:17-69
+37-->C:\Myproject\app\src\main\AndroidManifest.xml:30:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Myproject\app\src\main\AndroidManifest.xml:32:17-77
+39-->C:\Myproject\app\src\main\AndroidManifest.xml:32:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->C:\Myproject\app\src\main\AndroidManifest.xml:35:9-37:40
+43            android:name="com.cookandroid.myproject.LoginActivity"
+43-->C:\Myproject\app\src\main\AndroidManifest.xml:36:13-42
+44            android:exported="false" />
+44-->C:\Myproject\app\src\main\AndroidManifest.xml:37:13-37
+45        <activity
+45-->C:\Myproject\app\src\main\AndroidManifest.xml:38:9-41:55
+46            android:name="com.cookandroid.myproject.SettingGoal"
+46-->C:\Myproject\app\src\main\AndroidManifest.xml:39:13-40
+47            android:exported="false"
+47-->C:\Myproject\app\src\main\AndroidManifest.xml:40:13-37
+48            android:windowSoftInputMode="adjustPan" />
+48-->C:\Myproject\app\src\main\AndroidManifest.xml:41:13-52
+49        <activity
+49-->C:\Myproject\app\src\main\AndroidManifest.xml:42:9-49:20
+50            android:name="com.cookandroid.myproject.MainActivity"
+50-->C:\Myproject\app\src\main\AndroidManifest.xml:43:13-41
+51            android:exported="true" >
+51-->C:\Myproject\app\src\main\AndroidManifest.xml:44:13-36
+52            <intent-filter>
+52-->C:\Myproject\app\src\main\AndroidManifest.xml:29:13-33:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Myproject\app\src\main\AndroidManifest.xml:30:17-69
+53-->C:\Myproject\app\src\main\AndroidManifest.xml:30:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Myproject\app\src\main\AndroidManifest.xml:32:17-77
+55-->C:\Myproject\app\src\main\AndroidManifest.xml:32:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <uses-library
+59-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+60            android:name="androidx.window.extensions"
+60-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+61            android:required="false" />
+61-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+62        <uses-library
+62-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+63            android:name="androidx.window.sidecar"
+63-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\e072ed3a26cc6cfdf078ef45fd271749\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+68            android:authorities="com.cookandroid.myproject.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\김리연\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\김리연\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\김리연\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\김리연\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+76        </provider>
+77    </application>
+78
+79</manifest>
