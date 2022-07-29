@@ -8,10 +8,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
@@ -23,6 +20,7 @@ import java.time.format.DateTimeFormatter
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
     lateinit var dateEditText: EditText
     lateinit var diaryEditText: EditText
@@ -66,10 +64,9 @@ class MainActivity : AppCompatActivity() {
         diaryEditText=findViewById(R.id.diaryEditText)
         myHelper = myDBHelper(this)
 
-
-
         goal_plus.setOnClickListener {
             val intent = Intent(this, SettingGoal::class.java)
+            intent.putExtra("intent_date", dateEditText.text.toString())
             startActivity(intent)
         }
 
@@ -121,7 +118,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
     }
-
 
 
     @RequiresApi(Build.VERSION_CODES.O)
