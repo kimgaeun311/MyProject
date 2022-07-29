@@ -8,7 +8,10 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
@@ -66,8 +69,11 @@ class MainActivity : AppCompatActivity() {
         diaryEditText=findViewById(R.id.diaryEditText)
         myHelper = myDBHelper(this)
 
+
+
         goal_plus.setOnClickListener {
             val intent = Intent(this, SettingGoal::class.java)
+            intent.putExtra("intent_date", dateEditText.text.toString())
             startActivity(intent)
         }
 
@@ -90,14 +96,18 @@ class MainActivity : AppCompatActivity() {
 
         modify_button.setOnClickListener {
             sqlDB=myHelper.writableDatabase
+
             sqlDB.execSQL("UPDATE diaryTBL SET diaryText= '"+diaryEditText.text+"' WHERE dateText = '"+
                     dateEditText.text.toString()+"';")
+
             sqlDB.close()
+
             Toast.makeText(this, "해당 좀좀일기가 수정되었습니다.", Toast.LENGTH_SHORT).show()
         }
 
         delete_button.setOnClickListener {
             sqlDB=myHelper.writableDatabase
+
             sqlDB.execSQL("DELETE FROM diaryTBL WHERE dateText='"+dateEditText.text.toString()+"';")
             sqlDB.close()
             Toast.makeText(this, "해당 좀좀일기가 삭제되었습니다.", Toast.LENGTH_SHORT).show()
@@ -105,10 +115,13 @@ class MainActivity : AppCompatActivity() {
 
         plus_button.setOnClickListener {
             sqlDB = myHelper.writableDatabase
+
             sqlDB.execSQL(
                 "INSERT INTO diaryTBL VALUES ('" + dateEditText.text.toString() + "','" +
                         diaryEditText.text.toString() + "');")
+
             sqlDB.close()
+
             Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
 
@@ -142,6 +155,7 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = manager
 
         binding.recyclerView.adapter = adapter
+
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -171,6 +185,7 @@ class MainActivity : AppCompatActivity() {
                 dayList.add(LocalDate.of(CalendarUtill.selectedDate.year, CalendarUtill.selectedDate.monthValue, i-dayOfWeek))
             }
         }
+
         return dayList
     }
 
@@ -187,4 +202,5 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
 }
