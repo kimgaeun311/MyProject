@@ -63,6 +63,8 @@ id gosettingTxt
 id group_4
 id idTextEdit
 id imageView
+id imageView10
+id imageView11
 id imageView2
 id imageView3
 id imageView4

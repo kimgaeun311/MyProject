@@ -68,20 +68,6 @@ class registerActivity : AppCompatActivity() {
             return result
         }
 
-        fun getName(s: CharSequence) : String{
-
-            var db: SQLiteDatabase = readableDatabase
-            var result: String = ""
-
-            var cursor: Cursor = db.rawQuery("SELECT uName FROM registerTBL", null)
-
-            result = cursor.toString()
-
-            return result
-
-
-        }
-
         fun getResult1(uID: String, uPASSWORD: String): Boolean {
             var db: SQLiteDatabase = readableDatabase
             var result: String = ""
@@ -125,7 +111,7 @@ class registerActivity : AppCompatActivity() {
             sqlDB = reHelper.writableDatabase
 
             sqlDB.execSQL("INSERT INTO registerTBL VALUES ('"+userName.text.toString()+"',"
-                +userID.text.toString()+ ","+userPassword.text.toString()+");")
+                    +userID.text.toString()+ ","+userPassword.text.toString()+");")
 
             userID.getText().toString()
             userPassword.getText().toString()
