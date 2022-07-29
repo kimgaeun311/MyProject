@@ -46,7 +46,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="67dp"
         android:fontFamily="@font/zomfont"
-        android:text="7월26일"
+        android:text="7월29일"
         android:textColor="@color/blue_01"
         android:textSize="20sp"
 

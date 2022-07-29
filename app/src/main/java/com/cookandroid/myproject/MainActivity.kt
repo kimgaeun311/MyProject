@@ -8,10 +8,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
@@ -140,6 +137,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+       // R.array.my_list
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
