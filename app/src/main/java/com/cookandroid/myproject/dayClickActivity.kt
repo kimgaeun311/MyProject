@@ -51,33 +51,7 @@ class dayClickActivity : AppCompatActivity() {
         }
 
 
-        //스페너 전
-        /*
-        ArrayAdapter.createFromResource(
-            this,
-            arrayitems.get(),
-            R.layout.spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            spinner1.adapter = adapter
-        }
-        */
 
-
-        /*
-        * ArrayAdapter.createFromResource(
-            this,
-            R.array.my_list,
-            R.layout.spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            spinner1.adapter = adapter
-        }
-        * */
     }
 
 

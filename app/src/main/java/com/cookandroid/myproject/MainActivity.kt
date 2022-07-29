@@ -143,23 +143,7 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
-        //
-        /*
-        val spinner2: Spinner = findViewById(R.id.spinner2)
 
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.my_list,
-            R.layout.spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            spinner2.adapter = adapter
-        }*/
-
-
-       // R.array.my_list
     }
 
     //날짜 화면 보여주기
