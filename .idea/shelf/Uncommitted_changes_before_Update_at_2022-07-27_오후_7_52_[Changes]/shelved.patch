@@ -1,0 +1,72 @@
+Index: app/src/main/java/com/cookandroid/myproject/CalendarAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.cookandroid.myproject\r\n\r\nimport android.content.Context\r\nimport android.content.Intent\r\nimport android.graphics.Color\r\nimport android.os.Build\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport android.widget.TextView\r\nimport android.widget.Toast\r\nimport androidx.annotation.RequiresApi\r\nimport androidx.recyclerview.widget.RecyclerView\r\nimport java.time.LocalDate\r\nimport java.util.ArrayList\r\n\r\nclass CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.Adapter<CalendarAdapter.ItemViewHolder>() {\r\n\r\n    class ItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){\r\n\r\n        val dayText: TextView = itemView.findViewById(R.id.dayText)\r\n\r\n    }\r\n\r\n    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {\r\n\r\n        val view = LayoutInflater.from(parent.context).inflate(R.layout.calendar_cell, parent, false)\r\n\r\n        return ItemViewHolder(view)\r\n    }\r\n\r\n\r\n    @RequiresApi(Build.VERSION_CODES.O)\r\n    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {\r\n\r\n        var day = dayList[holder.adapterPosition]\r\n\r\n        if(day==null){\r\n            holder.dayText.text = \"\"\r\n        }else{\r\n            holder.dayText.text =day.dayOfMonth.toString()\r\n\r\n            if(day==CalendarUtill.selectedDate){\r\n                holder.itemView.setBackgroundColor(Color.LTGRAY)\r\n            }\r\n        }\r\n\r\n        holder.itemView.setOnClickListener{\r\n\r\n            var iYear = day?.year\r\n            var iMonth = day?.monthValue\r\n            var iDay = day?.dayOfMonth\r\n\r\n\r\n            var yearMonDay = \"$iYear 년 $iMonth 월 $iDay 일\"\r\n\r\n\r\n            if(iDay==26){\r\n                dayChange(holder.itemView.context)\r\n            }\r\n            Toast.makeText(holder.itemView.context, yearMonDay, Toast.LENGTH_SHORT).show()\r\n\r\n\r\n        }\r\n    }\r\n\r\n\r\n    override fun getItemCount(): Int {\r\n\r\n        return dayList.size\r\n    }\r\n\r\n\r\n    fun dayChange(context: Context) {\r\n\r\n        val intent = Intent(context, dayClickActivity::class.java)\r\n        context.startActivities(arrayOf(intent))\r\n    }\r\n\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/cookandroid/myproject/CalendarAdapter.kt b/app/src/main/java/com/cookandroid/myproject/CalendarAdapter.kt
+--- a/app/src/main/java/com/cookandroid/myproject/CalendarAdapter.kt	(revision 7d30e3562c76f82f22d46419869faa6e40ef2c65)
++++ b/app/src/main/java/com/cookandroid/myproject/CalendarAdapter.kt	(date 1658901031310)
+@@ -55,7 +55,7 @@
+             var yearMonDay = "$iYear 년 $iMonth 월 $iDay 일"
+ 
+ 
+-            if(iDay==26){
++            if(day==CalendarUtill.selectedDate){
+                 dayChange(holder.itemView.context)
+             }
+             Toast.makeText(holder.itemView.context, yearMonDay, Toast.LENGTH_SHORT).show()
+Index: app/src/main/java/com/cookandroid/myproject/CalendarUtill.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.cookandroid.myproject\r\n\r\nimport android.os.Build\r\nimport androidx.annotation.RequiresApi\r\nimport java.time.LocalDate\r\n\r\nclass CalendarUtill {\r\n    companion object{\r\n        @RequiresApi(Build.VERSION_CODES.O)\r\n        var selectedDate: LocalDate = LocalDate.now()\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/cookandroid/myproject/CalendarUtill.kt b/app/src/main/java/com/cookandroid/myproject/CalendarUtill.kt
+--- a/app/src/main/java/com/cookandroid/myproject/CalendarUtill.kt	(revision 7d30e3562c76f82f22d46419869faa6e40ef2c65)
++++ b/app/src/main/java/com/cookandroid/myproject/CalendarUtill.kt	(date 1658901031302)
+@@ -7,6 +7,6 @@
+ class CalendarUtill {
+     companion object{
+         @RequiresApi(Build.VERSION_CODES.O)
+-        var selectedDate: LocalDate = LocalDate.now()
++        public var selectedDate: LocalDate = LocalDate.now()
+     }
+ }
+\ No newline at end of file
+Index: local.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>## This file must *NOT* be checked into Version Control Systems,\r\n# as it contains information specific to your local configuration.\r\n#\r\n# Location of the SDK. This is only used by Gradle.\r\n# For customization when using a Version Control System, please read the\r\n# header note.\r\n#Wed Jul 27 00:36:20 KST 2022\r\nsdk.dir=C\\:\\\\Users\\\\asus\\\\AppData\\\\Local\\\\Android\\\\Sdk\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/local.properties b/local.properties
+--- a/local.properties	(revision 7d30e3562c76f82f22d46419869faa6e40ef2c65)
++++ b/local.properties	(date 1658900392362)
+@@ -4,5 +4,5 @@
+ # Location of the SDK. This is only used by Gradle.
+ # For customization when using a Version Control System, please read the
+ # header note.
+-#Wed Jul 27 00:36:20 KST 2022
+-sdk.dir=C\:\\Users\\asus\\AppData\\Local\\Android\\Sdk
++#Wed Jul 27 14:39:52 KST 2022
++sdk.dir=C\:\\AndroidSDK
+Index: app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Wed Jul 27 00:51:53 KST 2022\r\npath.4=9/classes.dex\r\npath.3=6/classes.dex\r\npath.2=11/classes.dex\r\npath.1=0/classes.dex\r\npath.0=classes.dex\r\nbase.4=C\\:\\\\Myproject\\\\app\\\\build\\\\intermediates\\\\dex\\\\debug\\\\mergeProjectDexDebug\\\\9\\\\classes.dex\r\nbase.3=C\\:\\\\Myproject\\\\app\\\\build\\\\intermediates\\\\dex\\\\debug\\\\mergeProjectDexDebug\\\\6\\\\classes.dex\r\nbase.2=C\\:\\\\Myproject\\\\app\\\\build\\\\intermediates\\\\dex\\\\debug\\\\mergeProjectDexDebug\\\\11\\\\classes.dex\r\nbase.1=C\\:\\\\Myproject\\\\app\\\\build\\\\intermediates\\\\dex\\\\debug\\\\mergeProjectDexDebug\\\\0\\\\classes.dex\r\nbase.0=C\\:\\\\Myproject\\\\app\\\\build\\\\intermediates\\\\dex\\\\debug\\\\mergeExtDexDebug\\\\classes.dex\r\nrenamed.3=classes4.dex\r\nrenamed.2=classes3.dex\r\nrenamed.1=classes2.dex\r\nrenamed.0=classes.dex\r\nrenamed.4=classes5.dex\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt b/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+--- a/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt	(revision 7d30e3562c76f82f22d46419869faa6e40ef2c65)
++++ b/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt	(date 1658901043227)
+@@ -1,4 +1,4 @@
+-#Wed Jul 27 00:51:53 KST 2022
++#Wed Jul 27 14:50:43 KST 2022
+ path.4=9/classes.dex
+ path.3=6/classes.dex
+ path.2=11/classes.dex
