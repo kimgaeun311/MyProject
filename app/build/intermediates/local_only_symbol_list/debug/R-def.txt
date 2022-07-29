@@ -34,6 +34,7 @@ drawable spinner2
 drawable spinner3
 drawable spinner4
 drawable spinner5
+drawable spinner6
 drawable zom1
 drawable zom2
 drawable zom3
@@ -62,7 +63,6 @@ id gosettingTxt
 id group_4
 id idTextEdit
 id imageView
-id imageView12
 id imageView2
 id imageView3
 id imageView4
@@ -89,8 +89,11 @@ id registerLogin
 id resigster
 id scrollView2
 id some_id
+id spinner
+id spinner2
 id text1
 id textView
+id textView1
 id textView2
 id textView4
 id textView6
