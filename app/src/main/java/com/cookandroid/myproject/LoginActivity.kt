@@ -7,14 +7,18 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
+import com.cookandroid.myproject.databinding.ActivityMainBinding
 
 class LoginActivity : AppCompatActivity() {
+    private lateinit var binging : ActivityMainBinding
     lateinit var login_button:Button
     lateinit var register_button: TextView
 
+
     lateinit var edtID : EditText
     lateinit var edtPASSWORD : EditText
+    lateinit var userrName:TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +28,13 @@ class LoginActivity : AppCompatActivity() {
         edtPASSWORD = findViewById(R.id.editPASSWORD)
 
 
+
+        binging = ActivityMainBinding.inflate(layoutInflater)
+
+        var dbHelper: registerActivity.registerDB = registerActivity.registerDB(applicationContext,"registerTBL.db", null, 1)
+
+
+
         title = "로그인"
 
         login_button=findViewById(R.id.login_button)
@@ -31,9 +42,18 @@ class LoginActivity : AppCompatActivity() {
         login_button.setOnClickListener {
 
 
-            Toast.makeText(this, edtID.text.toString()+ "님 어서오세요!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            if(dbHelper.getResult1(edtID.getText().toString(), edtPASSWORD.getText().toString())==true){
+
+                Toast.makeText(this, edtID.text.toString()+ "님 어서오세요!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+
+            }
+
+            else{
+                Toast.makeText(this, "정보가 잘못 입력되었습니다", Toast.LENGTH_SHORT).show()
+            }
+
         }
 
         register_button = findViewById(R.id.registerLogin)
