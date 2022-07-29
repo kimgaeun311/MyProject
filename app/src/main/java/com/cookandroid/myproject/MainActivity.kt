@@ -1,4 +1,6 @@
 package com.cookandroid.myproject
+
+import android.annotation.SuppressLint
 import android.content.Context
 import android.database.Cursor
 import android.content.Intent
@@ -30,15 +32,37 @@ class MainActivity : AppCompatActivity() {
     lateinit var delete_button: Button
     lateinit var plus_button: Button
     lateinit var myHelper:myDBHelper
-    lateinit var sqlDB: SQLiteDatabase
+
     lateinit var spinner2: Spinner
 
+    lateinit var dbManager: DBManager
+    lateinit var sqlDB: SQLiteDatabase
 
+
+    class DBManager(
+        context: Context?,
+        name: String?,
+        factory: SQLiteDatabase.CursorFactory?,
+        version:Int
+    ): SQLiteOpenHelper(context, name, factory, version){
+        override fun onCreate(db: SQLiteDatabase?) {
+            db!!.execSQL("CREATE TABLE personnel (goal text)")
+        }
+
+        override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
+
+        }
+    }
+    @SuppressLint("Range")
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         title = "좀좀일기"
+
+        dbManager = DBManager(this,"Goal",null,1)
+        sqlDB = dbManager.readableDatabase
+
 
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -125,7 +149,18 @@ class MainActivity : AppCompatActivity() {
 
 //스피너
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        val itemList = listOf("목표를 선택하세요")
+        var itemList = mutableListOf<String>("목표를 선택하세요")
+
+        var cursor: Cursor
+        cursor = sqlDB.rawQuery("SELECT * FROM goal text", null)
+
+        //받은 목표 집어넣기
+        var str_Goal = cursor.getString(cursor.getColumnIndex("goal text")).toString()
+
+        var goalll: TextView = TextView(this)
+        goalll.text = str_Goal
+        itemList.add("goalll")
+        //
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, itemList)
         spinner2 = findViewById(R.id.spinner2)
@@ -143,6 +178,9 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+        cursor.close()
+        sqlDB.close()
+        dbManager.close()
 
     }
 
