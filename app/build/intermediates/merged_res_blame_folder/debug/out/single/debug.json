@@ -88,6 +88,10 @@
         "source": "com.cookandroid.myproject.app-main-7:/font/font.xml"
     },
     {
+        "merged": "com.cookandroid.myproject.app-merged_res-5:/drawable_spinner6.png.flat",
+        "source": "com.cookandroid.myproject.app-main-7:/drawable/spinner6.png"
+    },
+    {
         "merged": "com.cookandroid.myproject.app-merged_res-5:/layout_fragment_second.xml.flat",
         "source": "com.cookandroid.myproject.app-main-7:/layout/fragment_second.xml"
     },
