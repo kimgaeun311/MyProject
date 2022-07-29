@@ -14,9 +14,13 @@
         android:theme="@style/Theme.MyProject"
         tools:targetApi="31">
         <activity
+            android:name=".registerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="Instantiatable" />
+        <activity
             android:name=".dayClickActivity"
             android:exported="false" />
-
         <activity
             android:name=".activity_splash"
             android:exported="true"
@@ -34,13 +38,12 @@
         <activity
             android:name=".SettingGoal"
             android:exported="false"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
