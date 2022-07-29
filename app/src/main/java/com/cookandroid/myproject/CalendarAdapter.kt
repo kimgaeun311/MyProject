@@ -16,6 +16,7 @@ import java.util.ArrayList
 
 class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.Adapter<CalendarAdapter.ItemViewHolder>() {
 
+    //캘린더 일수 구현과 레이아웃 구현 기능
     class ItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         val dayText: TextView = itemView.findViewById(R.id.dayText)
@@ -29,10 +30,12 @@ class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.
         return ItemViewHolder(view)
     }
 
+    //데이터설정
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
 
+        //날짜 변수
         var day = dayList[holder.adapterPosition]
 
         if(day==null){
@@ -45,6 +48,7 @@ class CalendarAdapter(private val dayList: ArrayList<LocalDate?>): RecyclerView.
             }
         }
 
+        //날짜 클릭
         holder.itemView.setOnClickListener{
 
             var iYear = day?.year
