@@ -114,6 +114,7 @@ layout fragment_second
 layout goal_list
 layout goal_setting
 layout register_activity
+layout spinner_item
 layout spinner_text
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -126,6 +127,8 @@ string next
 string previous
 string second_fragment_label
 string title_activity_splash
+style SpinnerDivideStyle
+style SpinnerTheme
 style Theme.MyProject
 style Theme.MyProject.AppBarOverlay
 style Theme.MyProject.NoActionBar
