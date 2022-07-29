@@ -1,5 +1,4 @@
 package com.cookandroid.myproject
-import android.annotation.SuppressLint
 import android.content.Context
 import android.database.Cursor
 import android.content.Intent
@@ -18,6 +17,8 @@ import com.cookandroid.myproject.databinding.ActivityMainBinding
 import java.time.LocalDate
 import java.time.YearMonth
 import java.time.format.DateTimeFormatter
+import java.util.ArrayList
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     lateinit var dateEditText: EditText
@@ -29,9 +30,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var plus_button: Button
     lateinit var myHelper:myDBHelper
     lateinit var sqlDB: SQLiteDatabase
-    lateinit var goal_list: ArrayList<String>
 
-    @SuppressLint("ResourceType")
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,28 +66,21 @@ class MainActivity : AppCompatActivity() {
         diaryEditText=findViewById(R.id.diaryEditText)
         myHelper = myDBHelper(this)
 
-
-        //좀좀목표를 추가하는 아이콘을 클릭한 경우
         goal_plus.setOnClickListener {
             val intent = Intent(this, SettingGoal::class.java)
-            intent.putExtra("intent_date", dateEditText.text.toString())
             startActivity(intent)
         }
 
-        //연월일 정보(YYYY/MM/DD)를 입력한 후 일기 조회 버튼을 클릭한 경우
         diary_search.setOnClickListener {
-            //입력된 연월일 정보를 갖고 DB에서 일기 내용 검색
             sqlDB = myHelper.readableDatabase
             var cursor: Cursor
             cursor = sqlDB.rawQuery("SELECT * FROM diaryTBL WHERE dateText='"+dateEditText.text.toString()+"';", null)
             var diary_toast:String
-            //DB에 해당 날짜와 그에 해당하는 일기 내용이 있는 경우
             if (cursor.moveToNext()){
                 diary_toast=cursor.getString(1)
                 diaryEditText.setText(diary_toast)
                 Toast.makeText(this, "해당 날짜의 일기 조회 완료", Toast.LENGTH_SHORT).show()
             }
-            //DB에 해당 날짜 관련 데이터가 없는 경우
             else{
                 diaryEditText.setText("(해당 날짜의 일기 없음)")
             }
@@ -95,40 +88,27 @@ class MainActivity : AppCompatActivity() {
             sqlDB.close()
         }
 
-        //좀좀일기-수정하기 버튼을 클릭한 경우
         modify_button.setOnClickListener {
             sqlDB=myHelper.writableDatabase
-
-            //해당 날짜의 일기 내용 수정(업데이트)
             sqlDB.execSQL("UPDATE diaryTBL SET diaryText= '"+diaryEditText.text+"' WHERE dateText = '"+
                     dateEditText.text.toString()+"';")
-
             sqlDB.close()
-
             Toast.makeText(this, "해당 좀좀일기가 수정되었습니다.", Toast.LENGTH_SHORT).show()
         }
 
-        //좀좀일기-삭제하기 버튼을 클릭한 경우
         delete_button.setOnClickListener {
             sqlDB=myHelper.writableDatabase
-
-            //DB에서 해당 날짜의 일기 내용 삭제
             sqlDB.execSQL("DELETE FROM diaryTBL WHERE dateText='"+dateEditText.text.toString()+"';")
             sqlDB.close()
             Toast.makeText(this, "해당 좀좀일기가 삭제되었습니다.", Toast.LENGTH_SHORT).show()
         }
 
-        //좀좀일기-등록하기 버튼을 클릭한 경우
         plus_button.setOnClickListener {
             sqlDB = myHelper.writableDatabase
-
-            //DB에서 해당 날짜에 일기 내용 추가
             sqlDB.execSQL(
                 "INSERT INTO diaryTBL VALUES ('" + dateEditText.text.toString() + "','" +
                         diaryEditText.text.toString() + "');")
-
             sqlDB.close()
-
             Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
 
@@ -149,6 +129,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //날짜 화면 보여주기
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setMonthView(){
         binding.monthYearText.text = monthYearFromDate(CalendarUtill.selectedDate)
@@ -162,9 +143,9 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = manager
 
         binding.recyclerView.adapter = adapter
-
     }
 
+    //날짜 타입 설정
     @RequiresApi(Build.VERSION_CODES.O)
     private fun monthYearFromDate(date: LocalDate):String{
 
@@ -172,6 +153,7 @@ class MainActivity : AppCompatActivity() {
         return date.format(formatter)
     }
 
+    //날짜 생성
     @RequiresApi(Build.VERSION_CODES.O)
     private fun dayInMonthArray(date: LocalDate): ArrayList<LocalDate?>{
 
@@ -192,7 +174,6 @@ class MainActivity : AppCompatActivity() {
                 dayList.add(LocalDate.of(CalendarUtill.selectedDate.year, CalendarUtill.selectedDate.monthValue, i-dayOfWeek))
             }
         }
-
         return dayList
     }
 
@@ -209,5 +190,4 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
 }
