@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.47000003" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editPASSWORD"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
@@ -95,11 +95,12 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:layout_marginBottom="126dp"
-        android:text="로그인"
+        android:layout_marginBottom="172dp"
         android:fontFamily="@font/zomfont"
+        android:text="로그인"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
         app:layout_constraintVertical_bias="0.100000024" />
@@ -112,22 +113,22 @@
         android:text="비밀번호 찾기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.762" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/registerLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/zomfont"
         android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.762" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

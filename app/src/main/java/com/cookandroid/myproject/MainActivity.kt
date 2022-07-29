@@ -8,7 +8,10 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
@@ -20,7 +23,6 @@ import java.time.format.DateTimeFormatter
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
     lateinit var dateEditText: EditText
     lateinit var diaryEditText: EditText
@@ -32,16 +34,19 @@ class MainActivity : AppCompatActivity() {
     lateinit var myHelper:myDBHelper
     lateinit var sqlDB: SQLiteDatabase
 
+
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         title = "좀좀일기"
 
+        //스페너 시작
+        //val spinner2 = findViewById<Spinner>(R.id.spinner2)
+        //스페너 끝
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
         CalendarUtill.selectedDate = LocalDate.now()
-
         setMonthView()
 
         binding.preBtn.setOnClickListener {
@@ -63,6 +68,8 @@ class MainActivity : AppCompatActivity() {
         dateEditText=findViewById(R.id.dateEditText)
         diaryEditText=findViewById(R.id.diaryEditText)
         myHelper = myDBHelper(this)
+
+
 
         goal_plus.setOnClickListener {
             val intent = Intent(this, SettingGoal::class.java)
@@ -117,8 +124,23 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
-    }
 
+//스피너
+        val spinner2: Spinner = findViewById(R.id.spinner2)
+
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.my_list,
+            R.layout.spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner2.adapter = adapter
+        }
+
+
+    }
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setMonthView(){
@@ -177,6 +199,8 @@ class MainActivity : AppCompatActivity() {
             db!!.execSQL("DROP TABLE IF EXISTS diaryTBL")
             onCreate(db)
         }
+
+
     }
 
 }
