@@ -27,6 +27,13 @@
     <string name="previous">Previous</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="title_activity_splash">activity_splash</string>
+    <style name="SpinnerDivideStyle" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:divider">@color/blue_02</item> 
+        <item name="android:dividerHeight">1dp</item> 
+    </style>
+    <style name="SpinnerTheme">
+        <item name="android:dropDownListViewStyle">@style/SpinnerDivideStyle</item>
+    </style>
     <style name="Theme.MyProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/blue_01</item>

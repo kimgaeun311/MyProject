@@ -102,6 +102,7 @@ layout content_activity_splash
 layout fragment_first
 layout fragment_second
 layout goal_setting
+layout spinner_item
 layout spinner_text
 mipmap ic_launcher
 mipmap ic_launcher_round
