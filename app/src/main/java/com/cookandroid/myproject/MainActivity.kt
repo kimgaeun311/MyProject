@@ -8,10 +8,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
@@ -125,7 +122,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
 
-//스피너
+        //스피너
         val spinner2: Spinner = findViewById(R.id.spinner2)
 
         ArrayAdapter.createFromResource(
