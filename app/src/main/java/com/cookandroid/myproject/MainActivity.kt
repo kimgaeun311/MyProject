@@ -132,7 +132,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "해당 좀좀일기가 등록되었습니다.", Toast.LENGTH_SHORT).show()
         }
 
-//스피너
+        //스피너
         val spinner2: Spinner = findViewById(R.id.spinner2)
 
         ArrayAdapter.createFromResource(
