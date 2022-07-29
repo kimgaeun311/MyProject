@@ -14,10 +14,8 @@ class LoginActivity : AppCompatActivity() {
     lateinit var login_button:Button
     lateinit var register_button: TextView
 
-
     lateinit var edtID : EditText
     lateinit var edtPASSWORD : EditText
-    lateinit var userrName:TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
