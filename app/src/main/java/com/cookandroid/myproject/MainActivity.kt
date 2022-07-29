@@ -8,6 +8,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var plus_button: Button
     lateinit var myHelper:myDBHelper
     lateinit var sqlDB: SQLiteDatabase
+    lateinit var spinner2: Spinner
 
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -122,6 +124,27 @@ class MainActivity : AppCompatActivity() {
         }
 
 //스피너
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        val itemList = listOf("목표를 선택하세요")
+
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, itemList)
+        spinner2 = findViewById(R.id.spinner2)
+        spinner2.adapter = adapter
+
+
+        spinner2.onItemSelectedListener = object: AdapterView.OnItemSelectedListener{
+
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                if(position != 0)
+                    Toast.makeText(this@MainActivity, itemList[position],
+                        Toast.LENGTH_SHORT).show()
+            }
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+        }
+        //
+        /*
         val spinner2: Spinner = findViewById(R.id.spinner2)
 
         ArrayAdapter.createFromResource(
@@ -133,7 +156,7 @@ class MainActivity : AppCompatActivity() {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
             spinner2.adapter = adapter
-        }
+        }*/
 
 
        // R.array.my_list

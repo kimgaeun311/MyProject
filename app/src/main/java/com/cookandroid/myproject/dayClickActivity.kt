@@ -28,14 +28,10 @@ class dayClickActivity : AppCompatActivity() {
        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
-       // var items = arrayOf("1","2","3","4")
-        var arrayitems = ArrayList<String>() // 불러올 때 0 ~ 배열크기만큼 불러오기
-        arrayitems.add("목표를 선택하세요")
-        arrayitems.add("잠자기")
 
         //arrayOf().arrayitems.toString()
 
-        val itemList = listOf("목표를 선택하세요", "잠자기")
+        val itemList = listOf("목표를 선택하세요")
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, itemList)
         spinner1 = findViewById(R.id.spinner)
