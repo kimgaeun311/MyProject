@@ -144,6 +144,10 @@
         "source": "C:\\Users\\kengj\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-49:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\kengj\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-47:\\drawable_spinner6.png.flat",
+        "source": "C:\\Users\\kengj\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-49:\\drawable\\spinner6.png"
+    },
+    {
         "merged": "C:\\Users\\kengj\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-merged_res-47:\\drawable_rectangle_7.png.flat",
         "source": "C:\\Users\\kengj\\.gradle\\daemon\\7.3.3\\com.cookandroid.myproject.app-main-49:\\drawable\\rectangle_7.png"
     },
