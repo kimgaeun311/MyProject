@@ -24,6 +24,8 @@ class registerActivity : AppCompatActivity() {
     lateinit var reHelper:registerDB
     lateinit var sqlDB: SQLiteDatabase
 
+
+    //회원가입 DB 테이블 생성
     @Suppress("DEPRECATION")
     class registerDB(context: Context, s: String, nothing: Nothing?, i: Int) : SQLiteOpenHelper(context,"register", null,1){
 
@@ -40,6 +42,7 @@ class registerActivity : AppCompatActivity() {
 
         }
 
+        //받아온 DB 값과 입력한 값을 비교하기 위한 함수
         fun getResult(): String {
             var db: SQLiteDatabase = readableDatabase
             var result: String = ""
@@ -68,6 +71,7 @@ class registerActivity : AppCompatActivity() {
             return result
         }
 
+        //입력된 아이디, 패스워드와 저장된 정보들이 일치 또는 그렇지 않을 때의 조건문
         fun getResult1(uID: String, uPASSWORD: String): Boolean {
             var db: SQLiteDatabase = readableDatabase
             var result: String = ""

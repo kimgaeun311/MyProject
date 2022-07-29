@@ -13,7 +13,7 @@ import android.content.Intent
 import android.os.Handler
 class activity_splash : AppCompatActivity() {
 
-
+//뒤로가가 버튼 구현
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
