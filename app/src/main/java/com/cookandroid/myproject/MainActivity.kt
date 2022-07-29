@@ -129,6 +129,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //날짜 화면 보여주기
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setMonthView(){
         binding.monthYearText.text = monthYearFromDate(CalendarUtill.selectedDate)
@@ -144,6 +145,7 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
     }
 
+    //날짜 타입 설정
     @RequiresApi(Build.VERSION_CODES.O)
     private fun monthYearFromDate(date: LocalDate):String{
 
@@ -151,6 +153,7 @@ class MainActivity : AppCompatActivity() {
         return date.format(formatter)
     }
 
+    //날짜 생성
     @RequiresApi(Build.VERSION_CODES.O)
     private fun dayInMonthArray(date: LocalDate): ArrayList<LocalDate?>{
 

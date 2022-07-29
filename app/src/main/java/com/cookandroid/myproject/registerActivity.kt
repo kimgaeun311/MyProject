@@ -108,6 +108,8 @@ class registerActivity : AppCompatActivity() {
 
         reHelper = registerDB(this, "registerTBL", null, 1)
 
+
+        //회원가입 완료시 버튼 구현
         entBtn.setOnClickListener {
 
 

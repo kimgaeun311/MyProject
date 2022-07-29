@@ -39,6 +39,7 @@ class LoginActivity : AppCompatActivity() {
 
         login_button=findViewById(R.id.login_button)
 
+        //로그인 성공 할때와 그렇지 않을 때
         login_button.setOnClickListener {
 
 
@@ -58,6 +59,7 @@ class LoginActivity : AppCompatActivity() {
 
         register_button = findViewById(R.id.registerLogin)
 
+        //회원가입 화면 넘어감
         register_button.setOnClickListener {
 
             val intent = Intent(this, registerActivity::class.java)
