@@ -34,25 +34,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var myHelper:myDBHelper
 
     lateinit var spinner2: Spinner
-
+    lateinit var sqlitedb: SQLiteDatabase
     lateinit var dbManager: DBManager
     lateinit var sqlDB: SQLiteDatabase
 
 
-    class DBManager(
-        context: Context?,
-        name: String?,
-        factory: SQLiteDatabase.CursorFactory?,
-        version:Int
-    ): SQLiteOpenHelper(context, name, factory, version){
-        override fun onCreate(db: SQLiteDatabase?) {
-            db!!.execSQL("CREATE TABLE personnel (goal text)")
-        }
-
-        override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-
-        }
-    }
     @SuppressLint("Range")
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,8 +46,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         title = "좀좀일기"
 
-        dbManager = DBManager(this,"Goal",null,1)
-        sqlDB = dbManager.readableDatabase
+
 
 
 
@@ -151,16 +136,33 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         var itemList = mutableListOf<String>("목표를 선택하세요")
 
-        var cursor: Cursor
-        cursor = sqlDB.rawQuery("SELECT * FROM goal text", null)
+        dbManager = DBManager(this, "groupTBL", null,1)
+        sqlitedb = dbManager.readableDatabase
 
-        //받은 목표 집어넣기
-        var str_Goal = cursor.getString(cursor.getColumnIndex("goal text")).toString()
+        var cursor: Cursor
+        //목표 db가 null이 아니라면..
+        cursor = sqlitedb.rawQuery("SELECT * FROM groupTBL", null)
+        //cursor = sqlDB.rawQuery("SELECT * FROM groupTBL;", null)
+
+        while (cursor.moveToNext()){
+            var str_Goal = cursor.getString(cursor.getColumnIndex("gGoaltext")).toString()
+
+
+            itemList.add(str_Goal)
+
+        }
+
+        cursor.close()
+        sqlitedb.close()
+
+        ////////////////
+        /*//받은 목표 집어넣기
+        var str_Goal = cursor.getString(cursor.getColumnIndex("goal")).toString()
 
         var goalll: TextView = TextView(this)
         goalll.text = str_Goal
-        itemList.add("goalll")
-        //
+        itemList.add("goalll")*/
+        /////////////////////////
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, itemList)
         spinner2 = findViewById(R.id.spinner2)
@@ -179,7 +181,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         cursor.close()
-        sqlDB.close()
+        sqlitedb.close()
         dbManager.close()
 
     }
@@ -236,6 +238,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun onCreate(db: SQLiteDatabase?) {
             db!!.execSQL("Create TABLE diaryTBL (dateText CHAR PRIMARY KEY, diaryText CHAR);")
+
         }
 
         override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {

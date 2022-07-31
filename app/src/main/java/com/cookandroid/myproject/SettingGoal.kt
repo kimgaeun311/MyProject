@@ -15,7 +15,10 @@ class SettingGoal : AppCompatActivity() {
     lateinit var edtGoal: EditText
 
     lateinit var sqlDB: SQLiteDatabase
-    lateinit var myHelper: SettingGoal.myDBHelper
+    //lateinit var myHelper: SettingGoal.myDBHelper
+
+    lateinit var dbManager: DBManager
+    lateinit var sqlitedb: SQLiteDatabase
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +29,7 @@ class SettingGoal : AppCompatActivity() {
         // 위젯 연결
         edtGoal = findViewById(R.id.goal_editText)      // 목표 입력받을 텍스트
         goal_plus_button = findViewById(R.id.rectangle_7)       // 등록하기 버튼
-        myHelper = myDBHelper(this)         // DBHelper
+        dbManager = DBManager(this, "groupTBL",null,1)         // DBHelper
 
 
         val intent = Intent(this, MainActivity::class.java)         // main->settinggoal intent
@@ -34,11 +37,12 @@ class SettingGoal : AppCompatActivity() {
 
         // DB에 목표 내용 저장하기
         goal_plus_button.setOnClickListener {
-            sqlDB = myHelper.writableDatabase
-            myHelper.onUpgrade(sqlDB, 1, 2)     // 버전 업데이트
+            sqlDB = dbManager.writableDatabase
+            //dbManager.onUpgrade(sqlDB, 1, 2)     // 버전 업데이트
 
             var str_Goal: String = edtGoal.text.toString()
-            sqlDB.execSQL("INSERT INTO groupTBL VALUES ('str_Goal', 'dateStr')")
+
+            sqlDB.execSQL("INSERT INTO groupTBL VALUES ('" +str_Goal+"')")
             sqlDB.close()       // 닫기 필수(메모리 누수 예방)
 
             // 등록 이후 토스트 출력 및 MainActivity로 넘어가기
@@ -66,15 +70,5 @@ class SettingGoal : AppCompatActivity() {
     }
 
     // DB관련 클래스 (onCreate와 onUpgrade)
-    inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "goalDB", null, 1) {
-        override fun onCreate(p0: SQLiteDatabase?) {
-            p0!!.execSQL("CREATE TABLE groupTBL (gGoal text, gDate text);")
-        }
 
-        override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-            p0!!.execSQL("DROP TABLE IF EXISTS groupTBL")
-            onCreate(p0)
-        }
-
-    }
 }
