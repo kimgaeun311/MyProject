@@ -19,6 +19,7 @@ class dayClickActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
 
+        title = "좀좀목표"
 
         val view = binding.root
         //setContentView(spinner1)
